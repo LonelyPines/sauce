@@ -8,22 +8,31 @@
 <link rel="stylesheet" href="css/alarm.css">
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Manual<br>de Uso </b></h3>
-  </div>
-  <div class="w3-bar-block">
 
-		<a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-		<a href="menu.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Menu</a> 
-			<a href="artefactos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artefactos</a> 
-					<a href="alarma.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Alarm</a> 
-					<a href="casa.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">House</a> 
-		<a href="contacto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us...</a>
-  </div>
-</nav>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding sidenav"
+    style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px;">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Manual<br>de Uso</b></h3>
+    </div>
+    <div class="w3-bar-block">
+
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <!-- <a href="menu.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Menu</a>  -->
+      <button class="dropdown-btn">Menu
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="artefactos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artefactos</a>
+        <a href="alarma.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Alarma</a>
+        <!-- <a href="#">Link 3</a> -->
+      </div>
+      <a href="casa.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Casa</a>
+      <a href="contacto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contactanos...</a>
+    </div>
+  </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
@@ -78,26 +87,7 @@
 
 </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+<script src="js/alarma.js"></script>
 
 </body>
 </html>
