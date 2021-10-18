@@ -73,13 +73,15 @@
 
 }
 /* On mouse-over */
-.w3-sidebar a:hover .dropdown-btn:hover {
-  color: #f1f1f1;
+.w3-sidebar a:hover , .dropdown-btn:hover, .fa-caret-down:hover {
+  color:  #262626;
+  background-color:  #f1f1f1;
 }
 /* Add an active class to the active dropdown button */
 .active {
   background-color: green;
   color: white;
+  
 }
 
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -94,5 +96,4 @@ body {font-size:16px;}
 .dropdown-container {
   display: none;
   background-color: #262626;
-  padding-left: 8px;
 }
