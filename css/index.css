@@ -57,6 +57,11 @@
   padding-right: 8px;
   color: white;
 }
+.fa-caret-down:hover{
+  float: right;
+  padding-right: 8px;
+  color: black;
+}
 
 .dropdown-btn {
   padding: 6px 8px 6px 16px;
