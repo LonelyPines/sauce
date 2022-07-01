@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="css/contact.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <body>
 
   <!-- Sidebar/menu -->
@@ -58,80 +57,7 @@
       <!-- <p>Please select text!</p> -->
     </div>
 
-    <!-- <button type="button"
-    onclick="getDate()">
-    What day is today?</button>
-    <p id="demo"></p>
-    
-    <div class="w3-row-padding">
-      <div class="month">
-        <ul>
-          <li class="prev">&#10094;</li>
-          <li class="next">&#10095;</li>
-          <li>Agosto<br><span style="font-size:18px">2022</span></li>
-        </ul>
-      </div>
-      
-      <ul class="weekdays">
-        <li>Lunes</li>
-        <li>Martes</li>
-        <li>Miercoles</li>
-        <li>Jueves</li>
-        <li>Viernes</li>
-        <li>Sabado</li>
-        <li>Domingo</li>
-      </ul>
-      
-      <ul class="days">  
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li><span class="active">10</span></li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-        <li>17</li>
-        <li>18</li>
-        <li>19</li>
-        <li>20</li>
-        <li>21</li>
-        <li>22</li>
-        <li>23</li>
-        <li>24</li>
-        <li>25</li>
-        <li>26</li>
-        <li>27</li>
-        <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
-      </ul>
-      
-    </div>
 
-    <div class="w3-row-padding">
-      <form>
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Apellido:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="mail">Email:</label><br>
-        <input type="email" id="mail" name="mail"><br>
-        <label for="phone">Telefono:</label><br>
-        <input type="number" id="phone" name="phone">
-        </form>
-    </div>
-
-  </div> -->
 
 
 
@@ -160,8 +86,11 @@
                 <div class="form-group">
                 <i class="fa fa-calendar-o"></i>
                   <label class="control-label">Check In</label>
-                  <div class='input-group date'  id='checkInPicker' onclick="showDatePicker()">
-                      <input type='text' class="form-control" required/>
+                  <div class='input-group date'  id='checkInPicker' onclick="">
+                     
+                      <input type="text" class="form-control" name="datefilter" value="" />
+
+
                       <span class="input-group-addon">
                       <span class="glyphicon glyphicon-calendar"></span>
                       </span>
@@ -172,8 +101,8 @@
                     <div class="form-group">
                       <i class="fa fa-calendar-o"></i>
                         <label class="control-label">Check Out</label>
-                        <div class='input-group date'  id='checkOutPicker' onclick="showDatePicker2()">
-                            <input type='text' class="form-control" required/>
+                        <div class='input-group date'  id='checkOutPicker' onclick="">
+                            <input type='text' class="form-control" name="checkout" required/>
                             <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                             </span>
@@ -209,14 +138,9 @@
 
 
   <script src="js/contacto.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </body>
+
+
 
 
 </html>

@@ -4,10 +4,10 @@ function getDate() {
 };
 
 function showDatePicker() {
-  $('#checkInPicker').datetimepicker();
+  // $('#checkInPicker').datetimepicker();
 };
 function showDatePicker2() {
-  $('#checkOutPicker').datetimepicker();
+  // $('#checkOutPicker').datetimepicker();
 };
 
 // Script to open and close sidebar
