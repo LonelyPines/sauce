@@ -16,7 +16,6 @@
   padding-right: 8px;
   color: white;
 }
-
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
@@ -61,6 +60,37 @@
 .fa-caret-down {
   float: right;
   padding-right: 8px;
+  color: white;
+}
+.fa-caret-down:hover{
+  float: right;
+  padding-right: 8px;
+  color: black;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+
+}
+/* On mouse-over */
+.w3-sidebar a:hover , .dropdown-btn:hover, .fa-caret-down:hover {
+  color:  #262626;
+  background-color:  #f1f1f1;
+}
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
 }
 
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -71,5 +101,9 @@ body {font-size:16px;}
 
 .w3-half img:hover{opacity:1}
 
-.w3-third img:hover{opacity:1}
-.w3-third img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
