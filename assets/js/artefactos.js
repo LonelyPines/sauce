@@ -11,10 +11,12 @@ function w3_close() {
 
 // Modal Image Gallery
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
+  // document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+  var instructionText = document.getElementById("instr");
+  instructionText.innerHTML = document.getElementById("instr_" + element.alt).innerHTML;    
 }
 function myFunction() {
   var x = document.getElementById("Demo");

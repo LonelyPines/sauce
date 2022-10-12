@@ -3,7 +3,7 @@
   <title>Del Sauce - Pinamar</title>
 <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="./assets/css/artefactos.css">
@@ -53,7 +53,7 @@
 
 
     <!-- Header -->
-    <div class="w3-container" style="margin-top:80px" id="secarropas">
+    <div class="w3-container" style="margin-top:80px" id="artefactos">
       <!-- <h1 class="w3-jumbo"><b>Del Sauce 864</b></h1> -->
       <h1 class="w3-xlarge w3-text-grey"><b>Instrucciones para usar los artefactos.</b></h1>
       <hr style="width:50px;border:5px solid green" class="w3-round">
@@ -61,40 +61,47 @@
 
     <div class="w3-row-padding">
       <div class="w3-third">
-        <div id=""></div>
-        <img src="./assets/img/cafetera.png" style="width:100%" onclick="onClick(this)" alt="1.">
+        <img src="./assets/img/secarropas.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Secaropas">
+        <p id="instr_Instrucciones del Secaropas" hidden>1. Meter la ropa mojada <br><br> 2. Girar perilla hasta numero de tiempo deseado.<br><br> 3. Presionar Boton de encendido</p>
       </div>
       <div class="w3-third">
-        <img src="./assets/img/pavaelectrica.png" style="width:100%;" onclick="onClick(this)" alt="6.">
+        <img src="./assets/img/microondas.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Microondas">
+        <p id="instr_Instrucciones del Microondas" hidden>1. Meter comida a calentar<br><br> 2. Presionar en comienzo rapido<br><br>3. Volver a presionar para incrementar el tiempo</p>
       </div>
       <div class="w3-third">
-        <img src="./assets/img/licuadora.png" style="width:100%;" onclick="onClick(this)" alt="3.">
+        <img src="./assets/img/pavaelectrica.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones de la Pava Electrica">
+        <p id="instr_Instrucciones de la Pava Electrica" hidden>1. Elegir temperatura deseada para mate (80°) <br><br>2. Presionar boton de encendido</p>
       </div>
-     
     </div>
     <br>
-
+    
     <div class="w3-row-padding">
       <div class="w3-third">
-        <img src="./assets/img/lavarropas.png" style="width:100%;" onclick="onClick(this)" alt="4.">
+        <img src="./assets/img/lavajillas.png" style="width:100%" onclick="onClick(this)" alt="Instrucciones del Lavavajillas">
+        <p id="instr_Instrucciones del Lavavajillas" hidden>1. Enjuagar platos para eliminar restos de comida <br><br>2. Cargar lavavajillas <br><br>3. Llenar con polvo el contenedor (OJO no pasar la linea maxima) <br><br> 4. Seleccionar el Modo <br><br> 5. Encender</p>
       </div>
       <div class="w3-third">
-        <img src="./assets/img/microondas.png" style="width:100%;" onclick="onClick(this)" alt="5.">
+        <img src="./assets/img/lavarropas.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Lavaropas">
+        <p id="instr_Instrucciones del Lavaropas" hidden>1. Cargar el lavaropas<br><br> 2. Agregar contenedor con Jabon liquido<br><br> 3. Encender</p>
       </div>
       <div class="w3-third">
-        <img src="./assets/img/lavajillas.png" style="width:100%" onclick="onClick(this)" alt="2.">
+        <img src="./assets/img/licuadora.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones de la Licuadora">
+        <p id="instr_Instrucciones de la Licuadora" hidden>1. Cargar licuadora<br><br> 2. Agregar Comida <br><br>3. Encender <br><br> ( NO METER HIELO GRANDE )  </p>
       </div>
     </div>
-
+    
     <div class="w3-row-padding">
       <div class="w3-third">
-        <img src="./assets/img/musica.png" style="width:100%;" onclick="onClick(this)" alt="7.">
+        <img src="./assets/img/musica.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Equipo de musica">
+        <p id="instr_Instrucciones del Equipo de musica" hidden>1. Encender<br><br> 2. Cambiar Radio<br><br> 3. Existe cable RSA para conectar al celular</p>
       </div>
       <div class="w3-third">
-        <img src="./assets/img/plancha.png" style="width:100%;" onclick="onClick(this)" alt="8.">
+        <img src="./assets/img/plancha.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones de la Plancha">
+        <p id="instr_Instrucciones de la Plancha" hidden>1. Enchufar <br><br>2. Usar<br><br></p>
       </div>
       <div class="w3-third">
-        <img src="./assets/img/secarropas.png" style="width:100%;" onclick="onClick(this)" alt="9.">
+        <img src="./assets/img/cafetera.png" style="width:100%" onclick="onClick(this)" alt="Instrucciones de la Cafetera">
+        <p id="instr_Instrucciones de la Cafetera" hidden>1. Cargar cafe <br><br>2. Cargar agua <br><br>3. Accionar botón rojo lado derecho</p>
       </div>
     </div>
 
@@ -104,7 +111,9 @@
       <span class="w3-button w3-black w3-xxlarge w3-display-topright"></span>
       <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
         <img id="img01" class="w3-image">
-        <p id="caption"></p>
+        <p id="caption" style="font-size: 25px;"></p>
+        <br>
+        <p id="instr"></p>
       </div>
     </div>
 
