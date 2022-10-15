@@ -1,16 +1,6 @@
-function getDate() {
-  document.getElementById('demo').innerHTML = Date();
-  
-};
 
-function showDatePicker() {
-  // $('#checkInPicker').datetimepicker();
-};
-function showDatePicker2() {
-  // $('#checkOutPicker').datetimepicker();
-};
 
-// Script to open and close sidebar
+  // Script to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
