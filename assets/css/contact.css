@@ -1,3 +1,16 @@
+.wasap {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  height: 60px;
+  width: 60px;
+  z-index: 10000;
+  visibility: visible;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 100;
+ 
+}
 /* Fixed sidenav, full height */
 .sidenav {
     height: 100%;
