@@ -139,3 +139,21 @@ body {
   background-color: #262626;
   padding-left: 8px;
 }
+/* scrollbar custom */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: green ; 
+}
+
