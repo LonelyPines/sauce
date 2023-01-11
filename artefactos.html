@@ -1,133 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
   <title>Del Sauce - Pinamar</title>
-<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="./assets/css/artefactos.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body>
-
-  <div class="wasap" style="animation-name: tada;">
-    <a href="https://wa.me/+5491134578901/?text=Hola Buen dia! quisiera alquilar la casa, mi nombre es " target="_blank"><img src="assets/img/WhatsApp.svg" alt="whatsapp"></a>
-  </div>
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding sidenav"
-    style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-      style="width:100%;font-size:22px;">X</a>
-    <div class="w3-container">
-      <h3 class="w3-padding-64"></h3>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins"
+  />
+  <link rel="stylesheet" href="./assets/css/artefactos.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    <div class="wasap" style="animation-name: tada">
+      <a
+        href="https://wa.me/+5491134578901/?text=Hola Buen dia! quisiera alquilar la casa, mi nombre es "
+        target="_blank"
+        ><img src="assets/img/WhatsApp.svg" alt="whatsapp"
+      /></a>
     </div>
-    <div class="w3-bar-block">
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding sidenav"
+      style="z-index: 3; width: 300px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-button w3-hide-large w3-display-topleft"
+        style="width: 100%; font-size: 22px"
+        >X</a
+      >
+      <div class="w3-container">
+        <h3 class="w3-padding-64"></h3>
+      </div>
+      <div class="w3-bar-block">
+        <a
+          href="index.html"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Home</a
+        >
+        <a href="index.html#servicios"> Caracteristicas</a>
+        <a href="index.html#map"> Como llego?</a>
+        <a
+          href="artefactos.html"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Artefactos</a
+        >
+        <a
+          href="fotos.html"
+          onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white"
+          >Fotos</a
+        >
+        <!-- <a href="contacto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reserva</a> -->
+      </div>
+    </nav>
 
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="index.html#servicios"> Caracteristicas</a>
-      <a href="index.html#map"> Como llego?</a>
-      <a href="artefactos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artefactos</a>
-      <a href="fotos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Fotos</a>
-      <!-- <a href="contacto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reserva</a> -->
+    <!-- Top menu on small screens -->
+    <header
+      class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding"
+    >
+      <a
+        href="javascript:void(0)"
+        class="w3-button w3-black w3-margin-right"
+        onclick="w3_open()"
+        >☰</a
+      >
+      <span>Artefactos</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+      <!-- Header -->
+      <div class="w3-container" style="margin-top: 80px" id="artefactos">
+        <!-- <h1 class="w3-jumbo"><b>Del Sauce 864</b></h1> -->
+        <h1 class="w3-xlarge w3-text-grey">
+          <b>Instrucciones para usar los artefactos.</b>
+        </h1>
+        <hr style="width: 50px; border: 5px solid green" class="w3-round" />
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <img
+            src="./assets/img/secarropas.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones del Secaropas"
+          />
+          <p id="instr_Instrucciones del Secaropas" hidden>
+            1. Meter la ropa centrifugada <br /><br />
+            2. Girar perilla hasta numero de tiempo deseado.<br /><br />
+            3. Presionar Boton de encendido<br /><br />
+
+            <!-- <video
+            src="assets/img/VIDEO/Microondas.mp4"
+            style="width: 100%"
+            controls
+            preload
+            loop
+            autoplay
+          ></video> -->
+          </p>
+        </div>
+        <div class="w3-third">
+          <img
+            src="./assets/img/microondas.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones del Microondas"
+          />
+
+          <p id="instr_Instrucciones del Microondas" hidden>
+            1. Instr 1 <br /><br />
+            2. Instr 2 <br /><br />
+            <video
+              src="assets/img/VIDEO/Microondas.mp4"
+              style="width: 100%"
+              controls
+              preload
+              loop
+              autoplay
+            ></video>
+          </p>
+        </div>
+        <div class="w3-third">
+          <img
+            src="./assets/img/pavaelectrica.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones de la Pava Electrica"
+          />
+          <p id="instr_Instrucciones de la Pava Electrica" hidden>
+            1. Elegir temperatura deseada para mate (80°) <br /><br />
+            2. Presionar boton de encendido<br /><br />
+            <!-- <video
+            src="assets/img/VIDEO/Microondas.mp4"
+            style="width: 100%"
+            controls
+            preload
+            loop
+            autoplay
+          ></video> -->
+          </p>
+        </div>
+      </div>
+      <br />
+
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <img
+            src="./assets/img/lavajillas.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones del Lavavajillas"
+          />
+          <p id="instr_Instrucciones del Lavavajillas" hidden>
+            1. Enjuagar platos para eliminar restos de comida <br /><br />2.
+            Cargar lavavajillas <br /><br />3. Llenar con polvo el contenedor
+            (OJO no pasar la linea maxima) <br /><br />
+            4. Seleccionar el Modo <br /><br />
+            5. Encender<br /><br />
+            <!-- <video
+            src="assets/img/VIDEO/Microondas.mp4"
+            style="width: 100%"
+            controls
+            preload
+            loop
+            autoplay
+          ></video> -->
+          </p>
+        </div>
+        <div class="w3-third">
+          <img
+            src="./assets/img/licuadora.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones de la Licuadora"
+          />
+          <p id="instr_Instrucciones de la Licuadora" hidden>
+            1. Cargar licuadora<br /><br />
+            2. Agregar Comida <br /><br />
+            3. Encender <br /><br />
+            ( NO METER HIELO GRANDE )<br /><br />
+            <!-- <video
+            src="assets/img/VIDEO/Microondas.mp4"
+            style="width: 100%"
+            controls
+            preload
+            loop
+            autoplay
+          ></video> -->
+          </p>
+        </div>
+        <div class="w3-third">
+          <img
+            src="./assets/img/lavarropas.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones del Lavaropas"
+          />
+          <p id="instr_Instrucciones del Lavaropas" hidden>
+            1. Instr 1°<br /><br />
+            2. Instr 2°<br /><br />
+            <video
+              src="assets/img/VIDEO/Washer.mp4"
+              style="width: 100%"
+              controls
+              preload
+              loop
+              autoplay
+            ></video>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <img
+            src="./assets/img/musica.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones del Equipo de musica"
+          />
+          <p id="instr_Instrucciones del Equipo de musica" hidden>
+            1. Encender<br /><br />
+            2. Cambiar Radio<br /><br />
+            3. Existe cable RSA para conectar al celular<br /><br />
+            <!-- <video
+            src="assets/img/VIDEO/Microondas.mp4"
+            style="width: 100%"
+            controls
+            preload
+            loop
+            autoplay
+          ></video> -->
+          </p>
+        </div>
+        <div class="w3-third">
+          <img
+            src="./assets/img/plancha.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones de la Plancha"
+          />
+          <p id="instr_Instrucciones de la Plancha" hidden>
+            1. Enchufar <br /><br />
+            2. Usar<br /><br />
+            <!-- <video
+            src="assets/img/VIDEO/Microondas.mp4"
+            style="width: 100%"
+            controls
+            preload
+            loop
+            autoplay
+          ></video> -->
+          </p>
+        </div>
+        <div class="w3-third">
+          <img
+            src="./assets/img/cafetera.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Instrucciones de la Cafetera"
+          />
+          <p id="instr_Instrucciones de la Cafetera" hidden>
+            1. Cargar cafe <br /><br />
+            2. Cargar agua <br /><br />
+            3. Accionar botón rojo lado derecho
+            <!-- <video
+            src="assets/img/VIDEO/Microondas.mp4"
+            style="width: 100%"
+            controls
+            preload
+            loop
+            autoplay
+          ></video> -->
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal for full size images on click-->
+      <div
+        id="modal01"
+        class="w3-modal w3-black"
+        style="padding-top: 0"
+        onclick="this.style.display='none'"
+      >
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright"></span>
+        <div
+          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+        >
+          <img id="img01" class="w3-image" />
+          <p id="caption" style="font-size: 25px"></p>
+          <br />
+          <p id="instr"></p>
+        </div>
+      </div>
+
+      <!-- End page content -->
     </div>
-  </nav>
 
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
-    <span>Artefactos</span>
-  </header>
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
-
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-
-
-    <!-- Header -->
-    <div class="w3-container" style="margin-top:80px" id="artefactos">
-      <!-- <h1 class="w3-jumbo"><b>Del Sauce 864</b></h1> -->
-      <h1 class="w3-xlarge w3-text-grey"><b>Instrucciones para usar los artefactos.</b></h1>
-      <hr style="width:50px;border:5px solid green" class="w3-round">
+    <!-- Footer -->
+    <div
+      class="w3-light-grey w3-container w3-padding-32"
+      style="margin-top: 75px; padding-right: 58px"
+    >
+      <p class="w3-center" style="height: 5px; font-size: 10px">
+        <a href="https://github.com/LonelyPines">Powered by LonelyPine</a>
+      </p>
     </div>
 
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <img src="./assets/img/secarropas.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Secaropas">
-        <p id="instr_Instrucciones del Secaropas" hidden>1. Meter la ropa mojada <br><br> 2. Girar perilla hasta numero de tiempo deseado.<br><br> 3. Presionar Boton de encendido</p>
-      </div>
-      <div class="w3-third">
-        <img src="./assets/img/microondas.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Microondas">
-        <p id="instr_Instrucciones del Microondas" hidden>
-          <video src="assets/img/VIDEO/Microondas.mp4" style="width:100%;" controls preload loop autoplay></video>
-      </div>
-      <div class="w3-third">
-        <img src="./assets/img/pavaelectrica.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones de la Pava Electrica">
-        <p id="instr_Instrucciones de la Pava Electrica" hidden>1. Elegir temperatura deseada para mate (80°) <br><br>2. Presionar boton de encendido</p>
-      </div>
-    </div>
-    <br>
-    
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <img src="./assets/img/lavajillas.png" style="width:100%" onclick="onClick(this)" alt="Instrucciones del Lavavajillas">
-        <p id="instr_Instrucciones del Lavavajillas" hidden>1. Enjuagar platos para eliminar restos de comida <br><br>2. Cargar lavavajillas <br><br>3. Llenar con polvo el contenedor (OJO no pasar la linea maxima) <br><br> 4. Seleccionar el Modo <br><br> 5. Encender</p>
-      </div>
-      <div class="w3-third">
-        <img src="./assets/img/licuadora.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones de la Licuadora">
-        <p id="instr_Instrucciones de la Licuadora" hidden>1. Cargar licuadora<br><br> 2. Agregar Comida <br><br>3. Encender <br><br> ( NO METER HIELO GRANDE )  </p>
-      </div>
-      <div class="w3-third">
-        <img src="./assets/img/lavarropas.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Lavaropas">
-        <p id="instr_Instrucciones del Lavaropas" hidden>
-          <video src="assets/img/VIDEO/Washer.mp4" style="width:100%;" controls preload loop autoplay></video>
-        </p>
-      </div>
-    </div>
-    
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <img src="./assets/img/musica.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones del Equipo de musica">
-        <p id="instr_Instrucciones del Equipo de musica" hidden>1. Encender<br><br> 2. Cambiar Radio<br><br> 3. Existe cable RSA para conectar al celular</p>
-      </div>
-      <div class="w3-third">
-        <img src="./assets/img/plancha.png" style="width:100%;" onclick="onClick(this)" alt="Instrucciones de la Plancha">
-        <p id="instr_Instrucciones de la Plancha" hidden>1. Enchufar <br><br>2. Usar<br><br></p>
-      </div>
-      <div class="w3-third">
-        <img src="./assets/img/cafetera.png" style="width:100%" onclick="onClick(this)" alt="Instrucciones de la Cafetera">
-        <p id="instr_Instrucciones de la Cafetera" hidden>1. Cargar cafe <br><br>2. Cargar agua <br><br>3. Accionar botón rojo lado derecho</p>
-      </div>
-    </div>
-
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-      <span class="w3-button w3-black w3-xxlarge w3-display-topright"></span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" style="font-size: 25px;"></p>
-        <br>
-        <p id="instr"></p>
-      </div>
-    </div>
-
-
-
-</body>
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-  <p class="w3-center" style="height:5px; font-size: 10px;"><a href="https://github.com/LonelyPines">Powered by LonelyPine</a>
-  </p>
-</div>
-
-<script src="./assets/js/artefactos.js"></script>
-</body>
-
+    <script src="./assets/js/artefactos.js"></script>
+  </body>
 </html>
