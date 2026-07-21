@@ -707,9 +707,14 @@ main:not(:has(.hero)) {
 
 @media (max-width: 700px) {
   .facts {
+    grid-template-columns: repeat(2, 1fr);
     transform: none;
     margin-top: var(--space-6);
     border-radius: var(--radius-md);
+  }
+
+  .fact:last-child {
+    grid-column: 1 / -1;
   }
 }
 
