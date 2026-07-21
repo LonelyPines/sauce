@@ -1,171 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-  <title>Del Sauce - Pinamar</title>
-<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="./assets/css/contacto.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarifas · Del Sauce 864 Pinamar</title>
+  <meta name="description" content="Consultá tarifas y disponibilidad por temporada para alquilar Del Sauce 864 en Pinamar.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203829">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
 <body>
 
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding sidenav"
-    style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-      style="width:100%;font-size:22px;">X</a>
-    <div class="w3-container">
-      <h3 class="w3-padding-64"></h3>
-    </div>
-    <div class="w3-bar-block">
+  <a class="visually-hidden" href="#main">Saltar al contenido principal</a>
 
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="index.html#servicios"> Caracteristicas</a>
-      <a href="index.html #map"> Como llego?</a>
-      <!-- <a href="artefactos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artefactos</a> -->
-      <a href="fotos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Fotos</a>
-      <!-- <a href="contacto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reserva</a> -->
+  <nav class="nav nav--solid" aria-label="Principal">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">Del Sauce 864</span>
+        <span class="brand__sub">Pinamar</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#la-casa">La casa</a></li>
+        <li><a href="index.html#comodidades">Comodidades</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="artefactos.html">Artefactos</a></li>
+        <li><a href="contacto.html" aria-current="page">Tarifas</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span class="icon" style="--icon-url:url('/assets/img/icons/menu.svg')"></span>
+      </button>
     </div>
   </nav>
+  <button class="nav__close" aria-label="Cerrar menú">
+    <span class="icon" style="--icon-url:url('/assets/img/icons/close.svg')"></span>
+  </button>
+  <div class="nav__scrim"></div>
 
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
-    <span>Reserva</span>
-  </header>
+  <main id="main">
 
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
-
-  <!-- !PAGE CONTENT! -->
- 
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
-    <div class="w3-container" style="margin-top:80px" id="secarropas">
-      <!-- <h1 class="w3-jumbo"><b>Del Sauce 864</b></h1> -->
-
-
-      <h1 class="w3-xlarge w3-text-grey"><b>Hace tu Reserva.</b></h1>
-      <hr style="width:50px;border:5px solid green" class="w3-round">
-      <!-- <p>Please select text!</p> -->
-    </div>
-
-    <div class="w3-row-padding">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Enero 2023</li>
-          <li class="w3-padding-16">Desde el 1° al 16° de Enero</li>
-          <li class="w3-padding-16">Depósito en garantía equivalente al 30% del valor del alquiler.</li>
-          <li class="w3-padding-16">
-            <h2>Consultar $</h2>
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Gabriel +54 9 11 3028-3604</span> -->
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Lucia +54 9 11 3457-8901</span> -->
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-red w3-padding-large w3-hover-black" disabled>Reservar</button>
-          </li>
-        </ul>
+    <header class="page-header">
+      <div class="container">
+        <span class="kicker">Tarifas</span>
+        <h1>Hacé tu reserva</h1>
+        <p>Valores a consultar por temporada. El depósito en garantía equivale al 30% del valor del alquiler.</p>
       </div>
-          
-      <div class="w3-half">
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Enero 2023</li>
-          <li class="w3-padding-16">Desde el 16° de Enero al 1° de Febrero</li>
-          <li class="w3-padding-16">Depósito en garantía equivalente al 30% del valor del alquiler.</li>
-          <li class="w3-padding-16">
-            <h2>Consultar $</h2>
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Gabriel +54 9 11 3028-3604</span> -->
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Lucia +54 9 11 3457-8901</span> -->
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-red w3-padding-large w3-hover-black" disabled>Reservar</button>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </header>
 
-    <div class="w3-row-padding">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Febrero 2023</li>
-          <li class="w3-padding-16">Del 1° de Febrero al 16° de Febrero</li>
-          <li class="w3-padding-16">Depósito en garantía equivalente al 30% del valor del alquiler.</li>
-          <li class="w3-padding-16">
-            <h2>Consultar $</h2>
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Gabriel +54 9 11 3028-3604</span> -->
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Lucia +54 9 11 3457-8901</span> -->
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-red w3-padding-large w3-hover-black" disabled>Reservar</button>
-          </li>
-        </ul>
+    <section class="section">
+      <div class="container">
+        <div class="rates">
+
+          <div class="rate-card reveal">
+            <div class="rate-card__head">
+              <span><span class="icon" style="--icon-url:url('/assets/img/icons/calendar.svg');width:1rem;height:1rem;vertical-align:-2px;"></span> Temporada</span>
+              <h3>Enero</h3>
+            </div>
+            <div class="rate-card__body">
+              <div class="rate-card__row"><span>Depósito en garantía</span><strong>30% del alquiler</strong></div>
+              <div class="rate-card__price">Consultar valor <span>por período</span></div>
+              <button class="btn btn-outline" disabled>Consultar disponibilidad</button>
+            </div>
+          </div>
+
+          <div class="rate-card reveal">
+            <div class="rate-card__head">
+              <span><span class="icon" style="--icon-url:url('/assets/img/icons/calendar.svg');width:1rem;height:1rem;vertical-align:-2px;"></span> Temporada</span>
+              <h3>Febrero</h3>
+            </div>
+            <div class="rate-card__body">
+              <div class="rate-card__row"><span>Depósito en garantía</span><strong>30% del alquiler</strong></div>
+              <div class="rate-card__price">Consultar valor <span>por período</span></div>
+              <button class="btn btn-outline" disabled>Consultar disponibilidad</button>
+            </div>
+          </div>
+
+          <div class="rate-card reveal">
+            <div class="rate-card__head">
+              <span><span class="icon" style="--icon-url:url('/assets/img/icons/calendar.svg');width:1rem;height:1rem;vertical-align:-2px;"></span> Temporada</span>
+              <h3>Marzo</h3>
+            </div>
+            <div class="rate-card__body">
+              <div class="rate-card__row"><span>Depósito en garantía</span><strong>30% del alquiler</strong></div>
+              <div class="rate-card__price">Consultar valor <span>por período</span></div>
+              <button class="btn btn-outline" disabled>Consultar disponibilidad</button>
+            </div>
+          </div>
+
+        </div>
       </div>
-          
-      <div class="w3-half">
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Febrero 2023</li>
-          <li class="w3-padding-16">Del 16° de Febrero al 4° de Marzo</li>
-          <li class="w3-padding-16">Depósito en garantía equivalente al 30% del valor del alquiler.</li>
-          <li class="w3-padding-16">
-            <h2>Consultar $</h2>
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Gabriel +54 9 11 3028-3604</span> -->
-          </li>
-          <li class="w3-padding-16">
-            <!-- <span class="w3-opacity">Lucia +54 9 11 3457-8901</span> -->
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-red w3-padding-large w3-hover-black" disabled>Reservar</button>
-          </li>
-        </ul>
+    </section>
+
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>La reserva online llega pronto</h2>
+          <p>Estamos preparando la reserva y el pago directamente desde el sitio. Mientras tanto, mirá la casa en fotos y guardá la fecha que te interesa.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn-primary" href="fotos.html">Ver fotos de la casa</a>
+        </div>
       </div>
     </div>
 
-<!-- 
-    <div class="w3-container" id="contact" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-grey"><b>Te quedaron dudas? Contactanos.</b></h1>
-      <hr style="width:50px;border:5px solid green" class="w3-round">
-      <p>Si queres saber algo mas o  tenes algun problema con la reserva no dudes en mandarnos tu mensaje. Te contestaremos en la brevedad.</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Nombre</label>
-          <input class="w3-input w3-border" type="text" name="Name" required="">
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required="">
-        </div>
-        <div class="w3-section">
-          <label>Mensaje</label>
-          <input class="w3-input w3-border" type="text" name="Message" required="">
-        </div>
-        <button type="submit" class="w3-button w3-block w3-padding-large w3-grey w3-margin-bottom">Mandar Mensaje</button>
-      </form>  
-    </div> -->
+  </main>
 
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Del Sauce 864</span>
+        <ul class="footer__links">
+          <li><a href="index.html#la-casa">La casa</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="artefactos.html">Artefactos</a></li>
+          <li><a href="contacto.html">Tarifas</a></li>
+        </ul>
+      </div>
+      <p class="footer__credit">Del Sauce 864, Pinamar · Sitio por <a href="https://github.com/LonelyPines" target="_blank" rel="noopener">LonelyPine</a></p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
 </body>
-
-</div>
-<!-- Footer -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-  <p class="w3-center" style="height:5px; font-size: 10px;"><a href="https://github.com/LonelyPines">Powered by LonelyPine</a>
-  </p>
-
-</div>
-<script src="./assets/js/contacto.js"></script>
 </html>

@@ -1,207 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
-  <title>Del Sauce - Pinamar</title>
-<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="./assets/css/fotos.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fotos · Del Sauce 864 Pinamar</title>
+  <meta name="description" content="Recorré en fotos la casa Del Sauce 864: dormitorios, living, cocina, baños y el quincho con parrilla.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203829">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
 <body>
 
-  <!-- <div class="wasap" style="animation-name: tada;">
-    <a href="https://wa.me/+5491134578901/?text=Hola Buen dia! quisiera alquilar la casa, mi nombre es " target="_blank"><img src="assets/img/WhatsApp.svg" alt="whatsapp"></a>
-  </div> -->
+  <a class="visually-hidden" href="#main">Saltar al contenido principal</a>
 
-  
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding sidenav"
-    style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-      style="width:100%;font-size:22px;">X</a>
-    <div class="w3-container">
-      <h3 class="w3-padding-64"></h3>
-    </div>
-    <div class="w3-bar-block">
-
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="index.html#servicios"> Caracteristicas</a>
-      <a href="index.html#map"> Como llego?</a>
-      <!-- <a href="artefactos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artefactos</a> -->
-      <a href="fotos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >Fotos</a>
-      <!-- <a href="contacto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reserva</a> -->
+  <nav class="nav nav--solid" aria-label="Principal">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">Del Sauce 864</span>
+        <span class="brand__sub">Pinamar</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#la-casa">La casa</a></li>
+        <li><a href="index.html#comodidades">Comodidades</a></li>
+        <li><a href="fotos.html" aria-current="page">Fotos</a></li>
+        <li><a href="artefactos.html">Artefactos</a></li>
+        <li><a href="contacto.html">Tarifas</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span class="icon" style="--icon-url:url('/assets/img/icons/menu.svg')"></span>
+      </button>
     </div>
   </nav>
+  <button class="nav__close" aria-label="Cerrar menú">
+    <span class="icon" style="--icon-url:url('/assets/img/icons/close.svg')"></span>
+  </button>
+  <div class="nav__scrim"></div>
 
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
-    <span>Fotos</span>
-  </header>
+  <main id="main">
 
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
+    <header class="page-header">
+      <div class="container">
+        <span class="kicker">Galería</span>
+        <h1>Fotos de la casa</h1>
+        <p>Un recorrido completo por cada rincón de Del Sauce 864, desde la fachada hasta el quincho.</p>
+      </div>
+    </header>
 
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <section class="section">
+      <div class="container">
+        <div class="gallery-filters reveal" role="group" aria-label="Filtrar fotos por ambiente">
+          <button type="button" class="is-active" data-filter="all" aria-pressed="true">Todas</button>
+          <button type="button" data-filter="exterior" aria-pressed="false">Exterior</button>
+          <button type="button" data-filter="living" aria-pressed="false">Living &amp; comedor</button>
+          <button type="button" data-filter="dormitorios" aria-pressed="false">Dormitorios</button>
+          <button type="button" data-filter="banos" aria-pressed="false">Baños</button>
+          <button type="button" data-filter="cocina" aria-pressed="false">Cocina</button>
+          <button type="button" data-filter="quincho" aria-pressed="false">Quincho &amp; jardín</button>
+          <button type="button" data-filter="otros" aria-pressed="false">Otros ambientes</button>
+        </div>
 
+        <div class="gallery">
 
+          <figure class="gallery__item reveal" data-category="exterior" data-caption="Acceso, lado derecho" data-lightbox>
+            <img src="./assets/img/FOTOS/frente_der.jpeg" alt="Acceso a la casa, lado derecho" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Acceso, lado derecho</figcaption>
+          </figure>
 
-    <!-- Header -->
-    <div class="w3-container" style="margin-top:80px" id="secarropas">
-      <!-- <h1 class="w3-jumbo"><b>Del Sauce 864</b></h1> -->
-      
-      
-      <h1 class="w3-xlarge w3-text-grey"><b>Fotos.</b></h1>
-      <hr style="width:50px;border:5px solid green" class="w3-round">
-      <!-- <p>Please select text!</p> -->
-      
-      
-      
+          <figure class="gallery__item reveal" data-category="exterior" data-caption="Acceso, lado izquierdo" data-lightbox>
+            <img src="./assets/img/FOTOS/frente_izq.jpeg" alt="Acceso a la casa, lado izquierdo" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Acceso, lado izquierdo</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="dormitorios" data-caption="Dormitorio principal" data-lightbox>
+            <img src="./assets/img/FOTOS/Dormitorio1.jpeg" alt="Dormitorio principal con cama Queen" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Dormitorio principal</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="dormitorios" data-caption="Dormitorio principal, semi-suite" data-lightbox>
+            <img src="./assets/img/FOTOS/Dormitorio11.jpeg" alt="Dormitorio principal, vista del baño en semi-suite" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Dormitorio principal, semi-suite</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="living" data-caption="Vista del living" data-lightbox>
+            <img src="./assets/img/FOTOS/vista_living.jpeg" alt="Vista general del living" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Vista del living</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="banos" data-caption="Baño con bañera" data-lightbox>
+            <img src="./assets/img/FOTOS/baño_dos.jpeg" alt="Baño con bañera" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Baño con bañera</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="dormitorios" data-caption="Dormitorio 2" data-lightbox>
+            <img src="./assets/img/FOTOS/Dormitorio2.jpeg" alt="Dormitorio 2, con dos camas de una plaza" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Dormitorio 2</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="dormitorios" data-caption="Dormitorio 3" data-lightbox>
+            <img src="./assets/img/FOTOS/Dormitorio3.jpeg" alt="Dormitorio 3, con dos camas de una plaza" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Dormitorio 3</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="banos" data-caption="Baño principal" data-lightbox>
+            <img src="./assets/img/FOTOS/baño_1.jpeg" alt="Baño principal" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Baño principal</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="living" data-caption="Living, lado derecho" data-lightbox>
+            <img src="./assets/img/FOTOS/living_der.jpeg" alt="Living, lado derecho" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Living, lado derecho</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="living" data-caption="Living, lado izquierdo" data-lightbox>
+            <img src="./assets/img/FOTOS/living_izq.jpeg" alt="Living, lado izquierdo" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Living, lado izquierdo</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="cocina" data-caption="Cocina, vista de frente" data-lightbox>
+            <img src="./assets/img/FOTOS/cocina_frente.jpeg" alt="Cocina totalmente equipada, vista de frente" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Cocina, vista de frente</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="cocina" data-caption="Cocina, vista lateral" data-lightbox>
+            <img src="./assets/img/FOTOS/cocina_costado.jpeg" alt="Cocina, vista lateral" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Cocina, vista lateral</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="otros" data-caption="Escalera al entrepiso" data-lightbox>
+            <img src="./assets/img/FOTOS/escalera.jpeg" alt="Escalera de acceso al entrepiso" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Escalera al entrepiso</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="otros" data-caption="Entrepiso, zona de trabajo" data-lightbox>
+            <img src="./assets/img/FOTOS/segundo_piso.jpeg" alt="Entrepiso con escritorio y cama adicional" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Entrepiso, zona de trabajo</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="living" data-caption="Rincón del living" data-lightbox>
+            <img src="./assets/img/FOTOS/living_esq.jpg" alt="Rincón del living" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Rincón del living</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="quincho" data-caption="Quincho con parrilla" data-lightbox>
+            <img src="./assets/img/FOTOS/quincho.jpg" alt="Quincho con parrilla" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Quincho con parrilla</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="quincho" data-caption="Quincho, otra vista" data-lightbox>
+            <img src="./assets/img/FOTOS/quincho_2.jpg" alt="Quincho, otra vista" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Quincho, otra vista</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="otros" data-caption="Lavadero" data-lightbox>
+            <img src="./assets/img/FOTOS/lavadero.jpg" alt="Lavadero equipado" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Lavadero</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="exterior" data-caption="Vista del fondo" data-lightbox>
+            <img src="./assets/img/FOTOS/vista_fondo.jpeg" alt="Vista del jardín en el fondo de la propiedad" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Vista del fondo</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="exterior" data-caption="Fondo de la propiedad" data-lightbox>
+            <img src="./assets/img/FOTOS/atras.jpeg" alt="Vista del fondo de la propiedad" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Fondo de la propiedad</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="exterior" data-caption="Fondo, otra vista" data-lightbox>
+            <img src="./assets/img/FOTOS/atras_1.jpeg" alt="Fondo de la propiedad, otra vista" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Fondo, otra vista</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-category="exterior" data-caption="Jardín trasero" data-lightbox>
+            <img src="./assets/img/FOTOS/atras_2.jpeg" alt="Jardín trasero, completamente privado" loading="lazy">
+            <span class="gallery__zoom"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span></span>
+            <figcaption class="gallery__caption">Jardín trasero</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox__btn lightbox__prev" aria-label="Foto anterior">
+      <span class="icon" style="--icon-url:url('/assets/img/icons/chevron-left.svg')"></span>
+    </button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__next" aria-label="Foto siguiente">
+      <span class="icon" style="--icon-url:url('/assets/img/icons/chevron-right.svg')"></span>
+    </button>
+    <button class="lightbox__btn lightbox__close" aria-label="Cerrar">
+      <span class="icon" style="--icon-url:url('/assets/img/icons/close.svg')"></span>
+    </button>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Del Sauce 864</span>
+        <ul class="footer__links">
+          <li><a href="index.html#la-casa">La casa</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="artefactos.html">Artefactos</a></li>
+          <li><a href="contacto.html">Tarifas</a></li>
+        </ul>
+      </div>
+      <p class="footer__credit">Del Sauce 864, Pinamar · Sitio por <a href="https://github.com/LonelyPines" target="_blank" rel="noopener">LonelyPine</a></p>
     </div>
-    <!-- Photo grid (modal) -->
-    <div class="w3-row-padding">
-      <div class="w3-half w3-center">
-        <img src="./assets/img/FOTOS/frente_der.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Acceso Lado Derecho">
-      </div>
-      <div class="w3-half w3-center">
-        <img src="./assets/img/FOTOS/frente_izq.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Acceso Lado Izquierdo">
-      </div>
-     
-    </div>
-    <br>
+  </footer>
 
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/atras_2.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Fondo">
-      </div>
-  
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/atras_1.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Fondo 2">
-      </div>
-    </div>
-    <br>
-     
-    <div class="w3-row-padding">
-      <div class="w3-half w3-center">
-        <img src="./assets/img/FOTOS/Dormitorio1.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Dormitorio 1">
-      </div>
-      <div class="w3-half w3-center">
-        <img src="./assets/img/FOTOS/Dormitorio11.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Dormitorio 1">
-      </div>
-     
-    </div>
-    <br>
-
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/baño_dos.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Baño con bañera">
-      </div>
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/Dormitorio2.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Tercer Cuarto">
-      </div>
-    </div>
-    <br>
-
-
-
-    <div class="w3-row-padding">
-      <div class="w3-half w3-center">
-        <img src="./assets/img/FOTOS/Dormitorio3.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Dormitorio 2">
-      </div>
-      <div class="w3-half w3-center">
-        <img src="./assets/img/FOTOS/baño_1.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Dormitorio 3">
-      </div>
-     
-    </div>
-    <br>
-
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/living_der.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Living Derecho">
-      </div>
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/living_izq.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Living Izquierdo">
-      </div>
-    </div>
-    <br>
-
-    <div class="w3-row-padding">
-      <div class="w3-half" style="display: flex;justify-content: center;">
-        <img src="./assets/img/FOTOS/cocina_frente.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Cocina">
-      </div>
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/cocina_costado.jpeg" style="width:100%; height:auto;" onclick="onClick(this)" alt="Cocina">
-      </div>
-    </div>
-    <br>
-    
-
-
-
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/vista_living.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Escalera al playroom">
-      </div>
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/vista_fondo.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Playroom">
-      </div>
-    </div>
-    <br>
-
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/escalera.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="vista desde el comedor al fondo">
-      </div>
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/segundo_piso.jpeg" style="width:100%; height:auto" onclick="onClick(this)" alt="Vista desde el comedor al frente">
-      </div>
-    </div>
-    <br>
-
-     <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/living_esq.jpg" style="width:100%; height:auto" onclick="onClick(this)" alt="Quincho">
-      </div>
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/quincho.jpg" style="width:100%; height:auto" onclick="onClick(this)" alt="Lavadero">
-      </div>
-    </div>
-    <br>
-
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/quincho_2.jpg" style="width:100%; height:auto" onclick="onClick(this)" alt="Comedor">
-      </div>
-      <div class="w3-half">
-        <img src="./assets/img/FOTOS/lavadero.jpg" style="width:100%; height:auto" onclick="onClick(this)" alt="Comedor">
-      </div>
-    </div>
-    <br>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption"></p>
-      </div>
-    </div>
-
-
+  <script src="./assets/js/main.js"></script>
 </body>
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-  <p class="w3-center" style="height:5px; font-size: 10px;"><a href="https://github.com/LonelyPines">Powered by LonelyPine</a>
-  </p>
-
-</div>
-<script src="./assets/js/fotos.js"></script>
-</body>
-
 </html>

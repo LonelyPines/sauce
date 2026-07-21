@@ -1,333 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
-  <title>Del Sauce - Pinamar</title>
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Poppins"
-  />
-  <link rel="stylesheet" href="./assets/css/artefactos.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <body>
-    <!-- <div class="wasap" style="animation-name: tada;">
-      <a
-        href="https://wa.me/+5491134578901/?text=Hola Buen dia! quisiera alquilar la casa, mi nombre es "
-        target="_blank"
-        ><img src="assets/img/WhatsApp.svg" alt="whatsapp"
-      /></a>
-    </div> -->
-    <!-- Sidebar/menu -->
-    <nav
-      class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding sidenav"
-      style="z-index: 3; width: 300px; font-weight: bold"
-      id="mySidebar"
-    >
-      <br />
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-button w3-hide-large w3-display-topleft"
-        style="width: 100%; font-size: 22px"
-        >X</a
-      >
-      <div class="w3-container">
-        <h3 class="w3-padding-64"></h3>
-      </div>
-      <div class="w3-bar-block">
-        <a
-          href="index.html"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Home</a
-        >
-        <a href="index.html#servicios"> Caracteristicas</a>
-        <a href="index.html#map"> Como llego?</a>
-        <a
-          href="artefactos.html"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Artefactos</a
-        >
-        <a
-          href="fotos.html"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Fotos</a
-        >
-        <!-- <a href="contacto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reserva</a> -->
-      </div>
-    </nav>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Artefactos · Del Sauce 864 Pinamar</title>
+  <meta name="description" content="Instrucciones rápidas para usar los artefactos de la casa: secarropas, microondas, lavavajillas, cafetera y más.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203829">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
 
-    <!-- Top menu on small screens -->
-    <header
-      class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding"
-    >
-      <a
-        href="javascript:void(0)"
-        class="w3-button w3-black w3-margin-right"
-        onclick="w3_open()"
-        >☰</a
-      >
-      <span>Artefactos</span>
+  <a class="visually-hidden" href="#main">Saltar al contenido principal</a>
+
+  <nav class="nav nav--solid" aria-label="Principal">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">Del Sauce 864</span>
+        <span class="brand__sub">Pinamar</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#la-casa">La casa</a></li>
+        <li><a href="index.html#comodidades">Comodidades</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="artefactos.html" aria-current="page">Artefactos</a></li>
+        <li><a href="contacto.html">Tarifas</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span class="icon" style="--icon-url:url('/assets/img/icons/menu.svg')"></span>
+      </button>
+    </div>
+  </nav>
+  <button class="nav__close" aria-label="Cerrar menú">
+    <span class="icon" style="--icon-url:url('/assets/img/icons/close.svg')"></span>
+  </button>
+  <div class="nav__scrim"></div>
+
+  <main id="main">
+
+    <header class="page-header">
+      <div class="container">
+        <span class="kicker">Guía práctica</span>
+        <h1>Instrucciones para usar los artefactos</h1>
+        <p>Tocá cualquier artefacto para ver el paso a paso. Ante cualquier duda, siempre podés contactarnos.</p>
+      </div>
     </header>
 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large"
-      onclick="w3_close()"
-      style="cursor: pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
+    <section class="section">
+      <div class="container">
+        <div class="appliances">
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
-      <!-- Header -->
-      <div class="w3-container" style="margin-top: 80px" id="artefactos">
-        <!-- <h1 class="w3-jumbo"><b>Del Sauce 864</b></h1> -->
-        <h1 class="w3-xlarge w3-text-grey">
-          <b>Instrucciones para usar los artefactos.</b>
-        </h1>
-        <hr style="width: 50px; border: 5px solid green" class="w3-round" />
-      </div>
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-secarropas">
+            <span class="appliance-card__media"><img src="./assets/img/secarropas.png" alt="" loading="lazy"></span>
+            <h3>Secarropas</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
 
-      <div class="w3-row-padding">
-        <div class="w3-third">
-          <img
-            src="./assets/img/secarropas.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones del Secaropas"
-          />
-          <p id="instr_Instrucciones del Secaropas" hidden>
-            1. Meter la ropa centrifugada <br /><br />
-            2. Girar perilla hasta numero de tiempo deseado.<br /><br />
-            3. Presionar Boton de encendido<br /><br />
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-microondas">
+            <span class="appliance-card__media"><img src="./assets/img/microondas.png" alt="" loading="lazy"></span>
+            <h3>Microondas</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
 
-            <!-- <video
-            src="assets/img/VIDEO/Microondas.mp4"
-            style="width: 100%"
-            controls
-            preload
-            loop
-            autoplay
-          ></video> -->
-          </p>
-        </div>
-        <div class="w3-third">
-          <img
-            src="./assets/img/microondas.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones del Microondas"
-          />
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-pava">
+            <span class="appliance-card__media"><img src="./assets/img/pavaelectrica.png" alt="" loading="lazy"></span>
+            <h3>Pava eléctrica</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
 
-          <p id="instr_Instrucciones del Microondas" hidden>
-            1. Instr 1 <br /><br />
-            2. Instr 2 <br /><br />
-            <video
-              src="assets/img/VIDEO/Microondas.mp4"
-              style="width: 100%"
-              controls
-              preload
-              loop
-              autoplay
-            ></video>
-          </p>
-        </div>
-        <div class="w3-third">
-          <img
-            src="./assets/img/pavaelectrica.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones de la Pava Electrica"
-          />
-          <p id="instr_Instrucciones de la Pava Electrica" hidden>
-            1. Elegir temperatura deseada para mate (80°) <br /><br />
-            2. Presionar boton de encendido<br /><br />
-            <!-- <video
-            src="assets/img/VIDEO/Microondas.mp4"
-            style="width: 100%"
-            controls
-            preload
-            loop
-            autoplay
-          ></video> -->
-          </p>
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-lavavajillas">
+            <span class="appliance-card__media"><img src="./assets/img/lavajillas.png" alt="" loading="lazy"></span>
+            <h3>Lavavajillas</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
+
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-licuadora">
+            <span class="appliance-card__media"><img src="./assets/img/licuadora.png" alt="" loading="lazy"></span>
+            <h3>Licuadora</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
+
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-lavarropas">
+            <span class="appliance-card__media"><img src="./assets/img/lavarropas.png" alt="" loading="lazy"></span>
+            <h3>Lavarropas</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
+
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-musica">
+            <span class="appliance-card__media"><img src="./assets/img/musica.png" alt="" loading="lazy"></span>
+            <h3>Equipo de música</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
+
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-plancha">
+            <span class="appliance-card__media"><img src="./assets/img/plancha.png" alt="" loading="lazy"></span>
+            <h3>Plancha</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
+
+          <button type="button" class="appliance-card reveal" data-modal-target="modal-cafetera">
+            <span class="appliance-card__media"><img src="./assets/img/cafetera.png" alt="" loading="lazy"></span>
+            <h3>Cafetera</h3>
+            <span class="appliance-card__hint"><span class="icon" style="--icon-url:url('/assets/img/icons/expand.svg')"></span>Ver instrucciones</span>
+          </button>
+
         </div>
       </div>
-      <br />
+    </section>
 
-      <div class="w3-row-padding">
-        <div class="w3-third">
-          <img
-            src="./assets/img/lavajillas.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones del Lavavajillas"
-          />
-          <p id="instr_Instrucciones del Lavavajillas" hidden>
-            1. Enjuagar platos para eliminar restos de comida <br /><br />2.
-            Cargar lavavajillas <br /><br />3. Llenar con polvo el contenedor
-            (OJO no pasar la linea maxima) <br /><br />
-            4. Seleccionar el Modo <br /><br />
-            5. Encender<br /><br />
-            <!-- <video
-            src="assets/img/VIDEO/Microondas.mp4"
-            style="width: 100%"
-            controls
-            preload
-            loop
-            autoplay
-          ></video> -->
-          </p>
-        </div>
-        <div class="w3-third">
-          <img
-            src="./assets/img/licuadora.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones de la Licuadora"
-          />
-          <p id="instr_Instrucciones de la Licuadora" hidden>
-            1. Cargar licuadora<br /><br />
-            2. Agregar Comida <br /><br />
-            3. Encender <br /><br />
-            ( NO METER HIELO GRANDE )<br /><br />
-            <!-- <video
-            src="assets/img/VIDEO/Microondas.mp4"
-            style="width: 100%"
-            controls
-            preload
-            loop
-            autoplay
-          ></video> -->
-          </p>
-        </div>
-        <div class="w3-third">
-          <img
-            src="./assets/img/lavarropas.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones del Lavaropas"
-          />
-          <p id="instr_Instrucciones del Lavaropas" hidden>
-            1. Instr 1°<br /><br />
-            2. Instr 2°<br /><br />
-            <video
-              src="assets/img/VIDEO/Washer.mp4"
-              style="width: 100%"
-              controls
-              preload
-              loop
-              autoplay
-            ></video>
-          </p>
-        </div>
-      </div>
+  </main>
 
-      <div class="w3-row-padding">
-        <div class="w3-third">
-          <img
-            src="./assets/img/musica.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones del Equipo de musica"
-          />
-          <p id="instr_Instrucciones del Equipo de musica" hidden>
-            1. Encender<br /><br />
-            2. Cambiar Radio<br /><br />
-            3. Existe cable RSA para conectar al celular<br /><br />
-            <!-- <video
-            src="assets/img/VIDEO/Microondas.mp4"
-            style="width: 100%"
-            controls
-            preload
-            loop
-            autoplay
-          ></video> -->
-          </p>
-        </div>
-        <div class="w3-third">
-          <img
-            src="./assets/img/plancha.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones de la Plancha"
-          />
-          <p id="instr_Instrucciones de la Plancha" hidden>
-            1. Enchufar <br /><br />
-            2. Usar<br /><br />
-            <!-- <video
-            src="assets/img/VIDEO/Microondas.mp4"
-            style="width: 100%"
-            controls
-            preload
-            loop
-            autoplay
-          ></video> -->
-          </p>
-        </div>
-        <div class="w3-third">
-          <img
-            src="./assets/img/cafetera.png"
-            style="width: 100%"
-            onclick="onClick(this)"
-            alt="Instrucciones de la Cafetera"
-          />
-          <p id="instr_Instrucciones de la Cafetera" hidden>
-            1. Cargar cafe <br /><br />
-            2. Cargar agua <br /><br />
-            3. Accionar botón rojo lado derecho
-            <!-- <video
-            src="assets/img/VIDEO/Microondas.mp4"
-            style="width: 100%"
-            controls
-            preload
-            loop
-            autoplay
-          ></video> -->
-          </p>
-        </div>
-      </div>
+  <!-- Instruction templates -->
+  <template id="modal-secarropas">
+    <div class="modal__eyebrow"><img src="./assets/img/secarropas.png" alt=""><h3>Secarropas</h3></div>
+    <ol>
+      <li>Meter la ropa centrifugada.</li>
+      <li>Girar la perilla hasta el tiempo deseado.</li>
+      <li>Presionar el botón de encendido.</li>
+    </ol>
+  </template>
 
-      <!-- Modal for full size images on click-->
-      <div
-        id="modal01"
-        class="w3-modal w3-black"
-        style="padding-top: 0"
-        onclick="this.style.display='none'"
-      >
-        <span class="w3-button w3-black w3-xxlarge w3-display-topright"></span>
-        <div
-          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
-        >
-          <img id="img01" class="w3-image" />
-          <p id="caption" style="font-size: 25px"></p>
-          <br />
-          <p id="instr"></p>
-        </div>
-      </div>
+  <template id="modal-microondas">
+    <div class="modal__eyebrow"><img src="./assets/img/microondas.png" alt=""><h3>Microondas</h3></div>
+    <ol>
+      <li>Colocar el plato dentro del microondas y cerrar la puerta.</li>
+      <li>Girar la perilla de tiempo y presionar Start para encender.</li>
+    </ol>
+    <video src="assets/img/VIDEO/Microondas.mp4" controls preload="metadata"></video>
+  </template>
 
-      <!-- End page content -->
+  <template id="modal-pava">
+    <div class="modal__eyebrow"><img src="./assets/img/pavaelectrica.png" alt=""><h3>Pava eléctrica</h3></div>
+    <ol>
+      <li>Elegir la temperatura deseada para el mate (80°).</li>
+      <li>Presionar el botón de encendido.</li>
+    </ol>
+  </template>
+
+  <template id="modal-lavavajillas">
+    <div class="modal__eyebrow"><img src="./assets/img/lavajillas.png" alt=""><h3>Lavavajillas</h3></div>
+    <ol>
+      <li>Enjuagar los platos para eliminar restos de comida.</li>
+      <li>Cargar el lavavajillas.</li>
+      <li>Llenar con polvo el contenedor, sin pasar la línea máxima.</li>
+      <li>Seleccionar el modo deseado.</li>
+      <li>Encender.</li>
+    </ol>
+  </template>
+
+  <template id="modal-licuadora">
+    <div class="modal__eyebrow"><img src="./assets/img/licuadora.png" alt=""><h3>Licuadora</h3></div>
+    <ol>
+      <li>Cargar la licuadora.</li>
+      <li>Agregar la comida.</li>
+      <li>Encender.</li>
+    </ol>
+    <p class="modal__note">No meter hielo en trozos grandes.</p>
+  </template>
+
+  <template id="modal-lavarropas">
+    <div class="modal__eyebrow"><img src="./assets/img/lavarropas.png" alt=""><h3>Lavarropas</h3></div>
+    <ol>
+      <li>Cargar la ropa y el jabón en su compartimento.</li>
+      <li>Elegir el programa y presionar Start.</li>
+    </ol>
+    <video src="assets/img/VIDEO/Washer.mp4" controls preload="metadata"></video>
+  </template>
+
+  <template id="modal-musica">
+    <div class="modal__eyebrow"><img src="./assets/img/musica.png" alt=""><h3>Equipo de música</h3></div>
+    <ol>
+      <li>Encender el equipo.</li>
+      <li>Cambiar de radio con el dial o los botones de estación.</li>
+      <li>Hay un cable RCA disponible para conectar el celular.</li>
+    </ol>
+  </template>
+
+  <template id="modal-plancha">
+    <div class="modal__eyebrow"><img src="./assets/img/plancha.png" alt=""><h3>Plancha</h3></div>
+    <ol>
+      <li>Enchufar la plancha.</li>
+      <li>Usar sobre la tabla de planchar.</li>
+    </ol>
+  </template>
+
+  <template id="modal-cafetera">
+    <div class="modal__eyebrow"><img src="./assets/img/cafetera.png" alt=""><h3>Cafetera</h3></div>
+    <ol>
+      <li>Cargar el café.</li>
+      <li>Cargar agua.</li>
+      <li>Accionar el botón rojo del lado derecho.</li>
+    </ol>
+  </template>
+
+  <!-- Appliance modal -->
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Instrucciones del artefacto">
+    <div class="modal__panel">
+      <button class="modal__close" aria-label="Cerrar">
+        <span class="icon" style="--icon-url:url('/assets/img/icons/close.svg')"></span>
+      </button>
+      <div class="modal__body"></div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <div
-      class="w3-light-grey w3-container w3-padding-32"
-      style="margin-top: 75px; padding-right: 58px"
-    >
-      <p class="w3-center" style="height: 5px; font-size: 10px">
-        <a href="https://github.com/LonelyPines">Powered by LonelyPine</a>
-      </p>
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Del Sauce 864</span>
+        <ul class="footer__links">
+          <li><a href="index.html#la-casa">La casa</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="artefactos.html">Artefactos</a></li>
+          <li><a href="contacto.html">Tarifas</a></li>
+        </ul>
+      </div>
+      <p class="footer__credit">Del Sauce 864, Pinamar · Sitio por <a href="https://github.com/LonelyPines" target="_blank" rel="noopener">LonelyPine</a></p>
     </div>
+  </footer>
 
-    <script src="./assets/js/artefactos.js"></script>
-  </body>
+  <script src="./assets/js/main.js"></script>
+</body>
 </html>
